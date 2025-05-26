@@ -1,0 +1,159 @@
+/* style.css - Gaya Sederhana untuk Sistem Barbershop */
+
+/* --- Pengaturan Dasar & Body --- */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Font dasar */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang abu-abu muda */
+    color: #333; /* Warna teks utama */
+}
+
+.container {
+    width: 80%; /* Lebar konten utama */
+    margin: 20px auto; /* Posisi di tengah dengan margin atas/bawah */
+    background-color: #fff; /* Latar belakang konten putih */
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+    border-radius: 8px; /* Sudut sedikit melengkung */
+}
+
+/* --- Judul & Tautan --- */
+h1, h2 {
+    color: #0056b3; /* Warna biru untuk judul */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff; /* Warna biru untuk tautan */
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 30px 0;
+}
+
+/* --- Menu Navigasi (index.php) --- */
+ul {
+    list-style: none; /* Hilangkan bullet points */
+    padding: 0;
+}
+
+ul li {
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+ul li a {
+    font-weight: bold;
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+/* --- Tabel (pelanggan.php & reservasi.php) --- */
+table {
+    width: 100%; /* Lebar tabel penuh */
+    border-collapse: collapse; /* Hilangkan spasi antar border */
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border abu-abu */
+    padding: 12px; /* Padding di dalam sel */
+    text-align: left; /* Teks rata kiri */
+}
+
+th {
+    background-color: #007bff; /* Latar belakang header biru */
+    color: white; /* Teks header putih */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna zebra untuk baris genap */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Warna saat baris di-hover */
+}
+
+/* --- Form (tambah_reservasi.php) --- */
+form label {
+    display: block; /* Label di baris baru */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="date"],
+form input[type="time"],
+form select {
+    width: 98%; /* Lebar input/select (98% untuk mengakomodasi padding) */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form .checkbox-group {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+form .checkbox-group label {
+    font-weight: normal;
+    display: inline; /* Biarkan checkbox berdampingan dengan teksnya */
+    margin-left: 5px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+form input[type="submit"] {
+    background-color: #28a745; /* Warna hijau untuk tombol simpan */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer; /* Ubah kursor saat hover */
+    transition: background-color 0.3s ease; /* Transisi halus */
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+}
+
+/* --- Pesan Feedback --- */
+.feedback {
+    background-color: #d4edda; /* Latar hijau muda untuk sukses */
+    color: #155724; /* Teks hijau tua */
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.feedback.error { /* Jika Anda ingin pesan error */
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
